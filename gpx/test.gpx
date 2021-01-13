@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="X-PAD 4.4.020" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+  <wpt lat="63.418058" lon="11.738563">
+    <ele>141.721200</ele>
+    <name>4_1</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.418143" lon="11.738399">
+    <ele>141.549900</ele>
+    <name>2744</name>
+  </wpt>
+  <wpt lat="63.418063" lon="11.738578">
+    <ele>141.783800</ele>
+    <name>4_2</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.418044" lon="11.738521">
+    <ele>141.676500</ele>
+    <name>4_3</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.418018" lon="11.738433">
+    <ele>141.658200</ele>
+    <name>4_4</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.418007" lon="11.738393">
+    <ele>141.291700</ele>
+    <name>4_5</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.417946" lon="11.738391">
+    <ele>141.366600</ele>
+    <name>4_6</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.417900" lon="11.738372">
+    <ele>141.530800</ele>
+    <name>4_7</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.417882" lon="11.738237">
+    <ele>141.475000</ele>
+    <name>4_8</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.417877" lon="11.738148">
+    <ele>140.796700</ele>
+    <name>4_9</name>
+    <desc>8303</desc>
+  </wpt>
+  <wpt lat="63.417873" lon="11.738141">
+    <ele>140.568900</ele>
+    <name>4_10</name>
+    <desc>8303</desc>
+  </wpt>
+</gpx>

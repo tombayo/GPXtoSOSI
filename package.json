@@ -1,0 +1,12 @@
+{
+  "name": "gpxtososi",
+  "version": "1.0.0",
+  "description": "Converts a gpx-file to a sosi-file",
+  "main": "index.js",
+  "author": "TAM",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "xml2json": "^0.12.0"
+  }
+}
