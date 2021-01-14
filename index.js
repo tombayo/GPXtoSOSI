@@ -27,7 +27,7 @@ async function parseXmlFile(path) {
   if (typeof(gpx) == "undefined") throw new Error('File is not a GPX file.')
 
   let wpt = gpx.wpt ?? []
-  let rte = gpx.rte.rtept ?? []
+  let rte = gpx.rte?.rtept ?? []
 
   let gpxdata = wpt.concat(rte)
   
