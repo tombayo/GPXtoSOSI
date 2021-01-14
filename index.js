@@ -30,8 +30,6 @@ async function parseXmlFile(path) {
   let rte = gpx.rte.rtept ?? []
 
   let gpxdata = wpt.concat(rte)
-
-  console.log(gpxdata, wpt, rte)
   
   if (!gpxdata.length) {
     throw new Error('No wpt or rte tag found in xml file!')
@@ -100,7 +98,7 @@ function generateSOSIset(setID, type, typename, coordObjects) {
   let { coordSOSIstring, minmaxArea } = generateSOSIcoords(coordObjects)
   let SOSIarea = generateSOSIarea(minmaxArea)
 
-  let SOSIset = `.${type} ${setID}
+  let SOSIset = `.${type} ${setID}:
   ..OBJTYPE ${typename}
   ..NØH
   ${coordSOSIstring}`
