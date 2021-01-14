@@ -21,14 +21,23 @@ async function main([,,path]) {
 
 async function parseXmlFile(path) {
   let data = await fs.readFile(path)
-  var xmldata = JSON.parse(xmlParser.toJson(data))
-  var wpt = xmldata.gpx.wpt
+  let xmldata = JSON.parse(xmlParser.toJson(data))
+  let gpx = xmldata.gpx
+  
+  if (typeof(gpx) == "undefined") throw new Error('File is not a GPX file.')
 
-  if (typeof(wpt) == "undefined") {
-    throw new Error('File is not a GPX file with WPT component')
+  let wpt = gpx.wpt ?? []
+  let rte = gpx.rte.rtept ?? []
+
+  let gpxdata = wpt.concat(rte)
+
+  console.log(gpxdata, wpt, rte)
+  
+  if (!gpxdata.length) {
+    throw new Error('No wpt or rte tag found in xml file!')
   }
 
-  return wpt
+  return gpxdata
 }
 
 async function convertGeoData(xmljson) {
@@ -119,9 +128,8 @@ function generateSOSI(coordObjects) {
 
 async function writeSOSI({SOSIheader,SOSIsets},path) {
   let [folder,file] = path.split('/')
-  let [filename,filetype] = file.split('.')
 
-  let result = await fs.writeFile(`sosi/${filename}.sos`, (SOSIheader+SOSIsets+'.SLUTT').replace(/  +/g,''))
+  let result = await fs.writeFile(`sosi/${file}.sos`, (SOSIheader+SOSIsets+'.SLUTT').replace(/  +/g,''))
 
   return result
 }
